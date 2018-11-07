@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		876AB52321920F2200955E46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876AB52221920F2200955E46 /* AppDelegate.swift */; };
-		876AB52521920F2200955E46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876AB52421920F2200955E46 /* ViewController.swift */; };
+		876AB52521920F2200955E46 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876AB52421920F2200955E46 /* CategoriesVC.swift */; };
 		876AB52821920F2200955E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876AB52621920F2200955E46 /* Main.storyboard */; };
 		876AB52A21920F2400955E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 876AB52921920F2400955E46 /* Assets.xcassets */; };
 		876AB52D21920F2400955E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 876AB52B21920F2400955E46 /* LaunchScreen.storyboard */; };
+		876AB5382192150300955E46 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876AB5372192150300955E46 /* CategoryCell.swift */; };
+		876AB53A2192176D00955E46 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876AB5392192176D00955E46 /* Category.swift */; };
+		876AB53D2192194A00955E46 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876AB53C2192194A00955E46 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		876AB51F21920F2200955E46 /* Coder-Swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coder-Swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		876AB52221920F2200955E46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		876AB52421920F2200955E46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		876AB52421920F2200955E46 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		876AB52721920F2200955E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		876AB52921920F2400955E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		876AB52C21920F2400955E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		876AB52E21920F2400955E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		876AB5372192150300955E46 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		876AB5392192176D00955E46 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		876AB53C2192194A00955E46 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		876AB52121920F2200955E46 /* Coder-Swag */ = {
 			isa = PBXGroup;
 			children = (
+				876AB53B2192193200955E46 /* Services */,
+				876AB5362192149200955E46 /* VIew */,
+				876AB5352192148900955E46 /* Model */,
+				876AB5342192148100955E46 /* Controller */,
 				876AB52221920F2200955E46 /* AppDelegate.swift */,
-				876AB52421920F2200955E46 /* ViewController.swift */,
 				876AB52621920F2200955E46 /* Main.storyboard */,
 				876AB52921920F2400955E46 /* Assets.xcassets */,
 				876AB52B21920F2400955E46 /* LaunchScreen.storyboard */,
 				876AB52E21920F2400955E46 /* Info.plist */,
 			);
 			path = "Coder-Swag";
+			sourceTree = "<group>";
+		};
+		876AB5342192148100955E46 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				876AB52421920F2200955E46 /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		876AB5352192148900955E46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				876AB5392192176D00955E46 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		876AB5362192149200955E46 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				876AB5372192150300955E46 /* CategoryCell.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		876AB53B2192193200955E46 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				876AB53C2192194A00955E46 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				876AB52521920F2200955E46 /* ViewController.swift in Sources */,
+				876AB52521920F2200955E46 /* CategoriesVC.swift in Sources */,
 				876AB52321920F2200955E46 /* AppDelegate.swift in Sources */,
+				876AB5382192150300955E46 /* CategoryCell.swift in Sources */,
+				876AB53A2192176D00955E46 /* Category.swift in Sources */,
+				876AB53D2192194A00955E46 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9BS6UYQ9N9;
 				INFOPLIST_FILE = "Coder-Swag/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9BS6UYQ9N9;
 				INFOPLIST_FILE = "Coder-Swag/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
