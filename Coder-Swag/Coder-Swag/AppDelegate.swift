@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Coder-Swag
+//  coder-swag
 //
-//  Created by S M HEMEL on 7/11/18.
-//  Copyright © 2018 S M HEMEL. All rights reserved.
+//  Created by Mark Price on 6/27/17.
+//  Copyright © 2017 Devslopes. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
