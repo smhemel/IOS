@@ -35,6 +35,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8765DC0921A4820A00C4D0FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8765DC0A21A4821100C4D0FF /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				876AB572219598B100955E46 /* Main.storyboard */,
+				876AB575219598B400955E46 /* Assets.xcassets */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		8765DC0B21A4821700C4D0FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				876AB56E219598B100955E46 /* AppDelegate.swift */,
+				876AB570219598B100955E46 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		876AB562219598B100955E46 = {
 			isa = PBXGroup;
 			children = (
@@ -54,10 +79,9 @@
 		876AB56D219598B100955E46 /* Dicee */ = {
 			isa = PBXGroup;
 			children = (
-				876AB56E219598B100955E46 /* AppDelegate.swift */,
-				876AB570219598B100955E46 /* ViewController.swift */,
-				876AB572219598B100955E46 /* Main.storyboard */,
-				876AB575219598B400955E46 /* Assets.xcassets */,
+				8765DC0B21A4821700C4D0FF /* Controller */,
+				8765DC0A21A4821100C4D0FF /* VIew */,
+				8765DC0921A4820A00C4D0FF /* Model */,
 				876AB577219598B400955E46 /* LaunchScreen.storyboard */,
 				876AB57A219598B400955E46 /* Info.plist */,
 			);
