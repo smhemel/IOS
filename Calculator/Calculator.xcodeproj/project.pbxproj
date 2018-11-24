@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87A592D221A9BB570081C209 /* Shunting-Yard-Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A592D121A9BB570081C209 /* Shunting-Yard-Algorithm.m */; };
 		87CC9C9021A51384006BC1D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CC9C8F21A51384006BC1D0 /* AppDelegate.swift */; };
 		87CC9C9221A51384006BC1D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CC9C9121A51384006BC1D0 /* ViewController.swift */; };
 		87CC9C9521A51384006BC1D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CC9C9321A51384006BC1D0 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87A592CF21A9BB130081C209 /* ImportCalculatorToSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImportCalculatorToSwift.h; sourceTree = "<group>"; };
+		87A592D021A9BB570081C209 /* Shunting-Yard-Algorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shunting-Yard-Algorithm.h"; sourceTree = "<group>"; };
+		87A592D121A9BB570081C209 /* Shunting-Yard-Algorithm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Shunting-Yard-Algorithm.m"; sourceTree = "<group>"; };
 		87CC9C8C21A51384006BC1D0 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87CC9C8F21A51384006BC1D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87CC9C9121A51384006BC1D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,12 +58,12 @@
 		87CC9C8E21A51384006BC1D0 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				87CC9C9621A51387006BC1D0 /* Assets.xcassets */,
-				87CC9CA321A5230B006BC1D0 /* Controller */,
-				87CC9CA221A52305006BC1D0 /* View */,
 				87CC9CA121A522FE006BC1D0 /* Model */,
-				87CC9C9821A51387006BC1D0 /* LaunchScreen.storyboard */,
+				87CC9CA221A52305006BC1D0 /* View */,
+				87CC9CA321A5230B006BC1D0 /* Controller */,
+				87CC9C9621A51387006BC1D0 /* Assets.xcassets */,
 				87CC9C9B21A51387006BC1D0 /* Info.plist */,
+				87CC9C9821A51387006BC1D0 /* LaunchScreen.storyboard */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -67,6 +71,9 @@
 		87CC9CA121A522FE006BC1D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				87A592CF21A9BB130081C209 /* ImportCalculatorToSwift.h */,
+				87A592D021A9BB570081C209 /* Shunting-Yard-Algorithm.h */,
+				87A592D121A9BB570081C209 /* Shunting-Yard-Algorithm.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +127,7 @@
 				TargetAttributes = {
 					87CC9C8B21A51384006BC1D0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -159,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A592D221A9BB570081C209 /* Shunting-Yard-Algorithm.m in Sources */,
 				87CC9C9221A51384006BC1D0 /* ViewController.swift in Sources */,
 				87CC9C9021A51384006BC1D0 /* AppDelegate.swift in Sources */,
 			);
@@ -306,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9BS6UYQ9N9;
 				INFOPLIST_FILE = Calculator/Info.plist;
@@ -315,6 +325,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Eastern-University.Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Calculator/Model/Calculator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -324,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9BS6UYQ9N9;
 				INFOPLIST_FILE = Calculator/Info.plist;
@@ -333,6 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Eastern-University.Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Calculator/Model/Calculator-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
