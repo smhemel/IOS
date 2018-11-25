@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainCalculator" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -340,6 +340,9 @@
                                                 <state key="normal" title="=">
                                                     <color key="titleColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="resultButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yk1-Ha-0SC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -375,7 +378,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="R0P-11-5qC"/>
+                    <navigationItem key="navigationItem" title="Calculator" id="R0P-11-5qC"/>
                     <connections>
                         <outlet property="equationTextLabel" destination="8cX-xQ-BjQ" id="bbT-dm-IN7"/>
                         <outlet property="resultTextLabel" destination="MXi-tc-7nm" id="Fxl-pN-zlZ"/>
@@ -383,7 +386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="770" y="133"/>
+            <point key="canvasLocation" x="786" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="33h-xH-nzB">

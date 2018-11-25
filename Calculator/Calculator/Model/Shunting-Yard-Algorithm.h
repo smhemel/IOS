@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Shunting_Yard_Algorithm : NSObject
-
+@property char *expression;
+@property NSMutableString *str_equation;
+-(NSString *) getAns:(int)size;
+ 
 @end
 
 NS_ASSUME_NONNULL_END
