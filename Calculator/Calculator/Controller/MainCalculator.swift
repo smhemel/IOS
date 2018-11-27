@@ -86,6 +86,9 @@ class MainCalculator: UIViewController {
         equation.append("%")
     }
     @IBAction func rootButton(_ sender: Any) {
+        showString.append("")
+        equationTextLabel.text = showString
+        equation.append("")
     }
     @IBAction func powerButton(_ sender: Any) {
         showString.append("^")
@@ -129,7 +132,9 @@ class MainCalculator: UIViewController {
                 equationTextLabel.text = showString
                 resultTextLabel.text = "Incomplete Equation";
             }
-            
+            else {
+                
+            }
         }
     }
     
