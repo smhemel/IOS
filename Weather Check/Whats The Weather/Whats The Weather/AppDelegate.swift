@@ -1,9 +1,9 @@
 //
-//  AppDelegate.swift
+//  ViewController.swift
 //  Whats The Weather
 //
-//  Created by Rob Percival on 20/06/2016.
-//  Copyright © 2016 Appfish. All rights reserved.
+//  Created by S M HEMEL on 29/12/2018.
+//  Copyright © 2018 Eastern University. All rights reserved.
 //
 
 import UIKit
