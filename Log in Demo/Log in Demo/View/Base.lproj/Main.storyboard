@@ -37,20 +37,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahd-Sr-jWQ">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="166.5" y="318" width="42" height="31"/>
+                                <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AvU-5G-XsP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSu-eG-OB3">
+                                <rect key="frame" x="157.5" y="391" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="7xP-OC-wxA"/>
+                                    <constraint firstAttribute="height" constant="30" id="iMO-Ia-HWI"/>
+                                </constraints>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c2D-pB-Jgp"/>
+                                    <action selector="logOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3z7-Dv-dVQ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fSu-eG-OB3" firstAttribute="centerX" secondItem="Ahd-Sr-jWQ" secondAttribute="centerX" id="6UO-C1-6oC"/>
                             <constraint firstItem="Ahd-Sr-jWQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Hf-Vi-7Ic"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QkY-Gx-Xrx" secondAttribute="trailing" constant="20" id="KXq-0R-Kt2"/>
+                            <constraint firstItem="fSu-eG-OB3" firstAttribute="top" secondItem="Ahd-Sr-jWQ" secondAttribute="bottom" constant="42" id="Osf-KG-jDW"/>
                             <constraint firstItem="QkY-Gx-Xrx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZPT-K6-SuP"/>
                             <constraint firstItem="SQk-CP-gS3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aW2-ue-GsT"/>
                             <constraint firstItem="Ahd-Sr-jWQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bKt-Ty-DPg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fSu-eG-OB3" secondAttribute="bottom" constant="246" id="cce-hj-0qe"/>
                             <constraint firstItem="SQk-CP-gS3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="oWS-x6-T2I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SQk-CP-gS3" secondAttribute="trailing" constant="20" id="sJp-YE-k7N"/>
                             <constraint firstItem="QkY-Gx-Xrx" firstAttribute="top" secondItem="SQk-CP-gS3" secondAttribute="bottom" constant="30" id="v3W-cU-20w"/>
@@ -60,6 +75,7 @@
                     <connections>
                         <outlet property="label" destination="QkY-Gx-Xrx" id="fng-mx-pDx"/>
                         <outlet property="logInButton" destination="Ahd-Sr-jWQ" id="rcg-K5-Gzc"/>
+                        <outlet property="logOutButton" destination="fSu-eG-OB3" id="Kj5-NE-Dtg"/>
                         <outlet property="textField" destination="SQk-CP-gS3" id="8iI-O0-LEL"/>
                     </connections>
                 </viewController>
