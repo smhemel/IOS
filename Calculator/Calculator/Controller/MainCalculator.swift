@@ -22,8 +22,14 @@ class MainCalculator: UIViewController {
         
     }
     @IBAction func allClearButton(_ sender: Any) {
+        equation = ""
+        showString = ""
+        equationTextLabel.text = showString
     }
     @IBAction func ceButton(_ sender: Any) {
+        equation = String(equation.dropLast())
+        showString = String(showString.dropLast())
+        equationTextLabel.text = showString
     }
     @IBAction func zeroButton(_ sender: Any) {
         showString.append("0")
@@ -133,6 +139,8 @@ class MainCalculator: UIViewController {
                 resultTextLabel.text = "Incomplete Equation";
             }
             else {
+                var usingObjectiveCMethod: Shunting_Yard_Algorithm = Shunting_Yard_Algorithm()
+                
                 
             }
         }
