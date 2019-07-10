@@ -139,7 +139,7 @@ class MainCalculator: UIViewController {
                 resultTextLabel.text = "Incomplete Equation";
             }
             else {
-                var usingObjectiveCMethod: Shunting_Yard_Algorithm = Shunting_Yard_Algorithm()
+                var _: Shunting_Yard_Algorithm = Shunting_Yard_Algorithm()
                 
                 
             }
